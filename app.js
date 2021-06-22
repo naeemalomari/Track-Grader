@@ -112,3 +112,6 @@ ourForm.addEventListener('submit', handleSubmission);
 
 renderHeader();
 checkLS();
+
+// Stech Goal Needs to add an If Statement if the grade is greater than 50 === pass
+// else fail but i don't have much time to write it
