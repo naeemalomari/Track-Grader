@@ -86,7 +86,6 @@ event.preventDefault();
 let studentName= event.target.studentName.value;
 let studentGrade= getRandomInt(0,100)
 let Course=event.target.Course.value;
-
 let newGrades= new Grades (studentName,studentGrade,Course);
 newGrades.render();
 localStorage.setItem('Grades',JSON.stringify(arrOfGrades));
