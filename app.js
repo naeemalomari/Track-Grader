@@ -41,7 +41,9 @@ Course.textContent=this.Course;
 FirstRow.appendChild(studentName);
 FirstRow.appendChild(studentGrade);
 FirstRow.appendChild(Course);
-
+studentName.setAttribute('class','td')
+studentGrade.setAttribute('class','td')
+Course.setAttribute('class','td')
 parentTable.appendChild(FirstRow);
 
 }
@@ -64,6 +66,14 @@ for (let j=0;j<arrOfGrades.length;j++){
     FirstRow.appendChild(studentGrade);
     FirstRow.appendChild(Course);
     
+    studentName.setAttribute('class','td')
+    studentGrade.setAttribute('class','td')
+    Course.setAttribute('class','td')
+    
+    studentName.setAttribute('class','th')
+    studentGrade.setAttribute('class','th')
+    Course.setAttribute('class','th')
+
     parentTable.appendChild(FirstRow);
     
 }
@@ -90,6 +100,7 @@ for(let i=0 ;i<arrOfHeader.length;i++){
 let th=document.createElement('th')
 th.textContent=arrOfHeader[i];
 headerRow.appendChild(th)
+
 }
 parentTable.appendChild(headerRow);
 }
