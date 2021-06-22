@@ -3,18 +3,14 @@
 let ourForm =document.getElementById('form');
 let arrOfHeader=['Student Name','Student Grade','Course','status'];
 let parentTable=document.getElementById('table');
+let arrOfGrades=[];
 
-// function getRandomArbitrary(min, max) {
-//     return Math.floor(Math.random()) * (max - min) + min;
-// }
 function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (100 - 0) + 0); //The maximum is exclusive and the minimum is inclusive
   }
 
-
-let arrOfGrades=[];
 function Grades(studentName,studentGrade,Course){
 
 this.studentName=studentName;
@@ -75,11 +71,8 @@ for (let j=0;j<arrOfGrades.length;j++){
     Course.setAttribute('class','th')
 
     parentTable.appendChild(FirstRow);
-    
 }
-
 }
-
 function handleSubmission(event){
 event.preventDefault();
 
