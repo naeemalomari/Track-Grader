@@ -1,7 +1,7 @@
 'use strict';
 
 let ourForm =document.getElementById('form');
-let arrOfHeader=['Student Name','Student Grade','Course'];
+let arrOfHeader=['Student Name','Student Grade','Course','status'];
 let parentTable=document.getElementById('table');
 
 // function getRandomArbitrary(min, max) {
@@ -15,7 +15,7 @@ function getRandomInt(min, max) {
 
 
 let arrOfGrades=[];
-function Grades(studentName,studentGrade,Course,min,max){
+function Grades(studentName,studentGrade,Course){
 
 this.studentName=studentName;
 this.studentGrade=studentGrade;
